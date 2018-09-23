@@ -26,7 +26,7 @@ def scrap_all(items):
 def __start_browser():
     print('Starting headless browser...')
     options = webdriver.ChromeOptions()
-    # options.add_argument('headless')
+    options.add_argument('headless')
     browser = webdriver.Chrome('chrome/chromedriver.exe', options=options)
     browser.implicitly_wait(30)
     print('Browser started')
